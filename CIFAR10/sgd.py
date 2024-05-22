@@ -19,7 +19,7 @@ parser.add_argument('--datadir', type=str, default='/home/wjf/datasets/CIFAR10/n
 parser.add_argument('--logdir', type=str, default='logs/SGD')
 
 args = parser.parse_args()
-logger = LogSaver(args.logdir)
+logger = LogSaver(args.logdir,'logs_sgd')
 logger.save(str(args), 'args')
 
 # data
